@@ -15,5 +15,5 @@ function changeTheme() {
         logo.src = "byui-logo_blue.webp";
         logo.alt = "Light Mode logo";
         document.body.appendChild(logo); 
-    }
+    } 
 }  

@@ -16,4 +16,4 @@ function changeTheme() {
         logo.alt = "Light Mode logo";
         document.body.appendChild(logo); 
     }
-}
+}  

@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="coolpics.css">
+    <script src="coolpics.js" defer> </script>
 </head>
 <body>
     <header>
         <h1>Cool Pics 📷</h1>
-        <h2 class = "menu">Menu</h2>
-        <nav class = "navigation">
+        <button id = "menuButton">Menu</button>
+        <nav id = "menu" hidden>
             <li><a href="index.html" class="home">Home</a></li>
             <li><a href="index.html" class="people">People</a></li>
             <li><a href="index.html" class="places">Places</a></li>
@@ -22,6 +23,7 @@
     </header>
     <main>
         <p class = "opener">Current Work</p>
+        <div class = 'gallery'>  
         <section id = "sm-gallery">
             <figure>  
                 <img src="norris-sm.jpeg" alt="picture">
@@ -80,9 +82,14 @@
                 <img src="norris-full.jpeg" alt="picture">
             </figure>    
         </section>
+        </div>       
     </main>
     <footer>
         <p>©2023 Not a real site :)</p>
     </footer>
+    <dialog>
+         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+         <button class='close-viewer'>X</button>
+    </dialog>
 </body>
 </html>

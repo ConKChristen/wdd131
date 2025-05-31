@@ -60,6 +60,8 @@ img{
         margin-top: 50px;
         margin-left: 50px;
         margin-right: 50px;
+         grid-column: 2 / 3;
+        grid-row: 5 / -1; /* Span the full height of the main grid */
     }
     #book {
         padding-left: 50px;

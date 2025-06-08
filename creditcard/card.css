@@ -1,0 +1,140 @@
+#maincontent {
+    display: grid;
+    grid-template-columns: 1fr 2fr 25%;
+    gap: 1em;
+    grid-template-rows: 1fr 7fr 1fr;
+    padding-top: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+#cardFront {
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+    border: 3px solid gray;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 100px;
+    padding: 6%;
+    /*padding-bottom: 100px;*/
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    z-index: 1;
+    gap: 1em;
+}
+
+#cardBack {
+    width: 100%;
+    height: 400px;
+    background-color: lightgray;
+    border: 3px solid gray;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 100px;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: 0;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 1em;
+}
+
+img{
+    justify-content: right;
+    justify-items: right;
+    justify-self: right;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#backSecurity {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.ccNumber{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: left;
+    padding-left: 50px;
+}
+
+#month {
+    min-width: 25px; 
+    max-width: 50px;
+    height: 25px;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+#year{
+    min-width: 25px; 
+    max-width: 50px; 
+    height: 25px;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+#cardExpiration {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px 50px;
+    gap: 5px;
+    justify-self: auto;
+}
+
+.labelE {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: start;
+    text-align: center;
+}
+
+label {
+    font-size: 25px;
+}
+
+.labelCCNumber {
+    height: 25px;
+    width: 250px;
+}
+
+footer {
+    justify-self: center;
+    margin-top: 15px;
+    margin-left: 55%;
+}
+
+p {
+    justify-self: left;
+    padding-left: 50px;
+    font-size: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.ccName {
+    justify-self: left;
+    padding-left: 50px;
+}
+
+.rectangle{
+    width: auto;
+    height: 100px; 
+    background-color: black;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 30px;
+}

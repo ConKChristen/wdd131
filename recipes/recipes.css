@@ -1,0 +1,128 @@
+ @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+
+ .top-page{
+    display:flex;
+    justify-content: center;
+ }
+
+ header {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+ }
+
+ header img {
+    width: 150px;
+    height: 150px;
+ }
+
+ h1 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 5em;
+ }
+
+ h2{
+    color: #59c3c3;
+    font-family: var(--secondary-font);
+    font-size: 3em;
+ }
+
+ .recipe-search-bar {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.recipe-search-bar img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#search-bar {
+    width: 90%;
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+ .recipe {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 3%;
+    padding: 3%;
+ }
+
+ .review {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    margin-left: 5%;
+ }
+
+ .tags {
+    display: inline-block;
+    border: 3px solid black;
+    max-width: fit-content;
+    padding: 2px 8x;
+ }
+
+ .review p {
+    display: none;
+ }
+
+.recipe-gallery{
+    text-align: center;
+}
+
+.recipe-gallery img {
+    width: 100%;
+}
+
+footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ .social img{
+    width: 5%;
+ }
+
+
+
+@media screen and (min-width: 730px) {
+    .recipe{
+        flex-direction: row;
+    }
+
+    .review p {
+        display: block;
+        font-size: 2em;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+    }
+
+    .social {
+        text-align: right;
+        margin-right: 100px;
+    }
+}

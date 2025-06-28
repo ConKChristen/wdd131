@@ -1,62 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-    <meta name="description" content="BYUI Mission Statement.">
-    <meta name="author" content="Connor Christensen">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 Recipes</title>
+    <title>Recipes</title>
     <link rel="stylesheet" href="recipes.css">
-    <script defer src="recipes.js"></script>
+    <script src="recipes.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="top-page">
-            <img src="images/recipe-book.png" alt="recipe-header-img">
-            <h1>Recipe Book</h1>
+        <div id="title">
+            <img src="images/recipe-book.png" alt="recipie book">
+            <h1>RecipeBook</h1>
         </div>
-        <div class="recipe-search-bar">
-            <input type = 'text' id="search-bar" placeholder="Find a Recipe">
-            <img src="images/search.svg" alt="magnifying glass search">
-        </div>
+        <div id="search">
+            <input type="text" id="search-input" placeholder="Find a recipe">
+            <button id="search-btn">
+                <img src="images/search.svg" alt="search">
+            </button>
+</div>
     </header>
     <main>
-        <div class="recipe">
-            <div class="recipe-gallery">
-                <section>
-                    <img src="images/apple-crisp.jpg" alt="Apple Crsip Img">
-                </section>
-            </div>
-            <div class="review">
-                <div class="tags">
-                    <h3>dessert</h3>
-                </div>
-                <h2>Apple Crisp</h2>
-                <div class="star-review">
-                    <span
-                        class="rating"
-                        role="img"
-                        aria-label="Rating: 4 out of 5 stars"
-                    >
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                        <span aria-hidden="true" class="icon-star-empty">☆</span>
-                    </span>
-                </div>
-                <p>This apple crisp recipe is simple yet delicious fall dessert that's great served warm with vanella ice cream.</p>
-            </div>
-        </div>
+
     </main>
     <footer>
         <div class="social">
-	<!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-	<a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-	<a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-	<a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
-</div>
-    <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+	        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+	        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+	        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+	        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
     </footer>
 </body>
 </html>
